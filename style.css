@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #37e7ed, #2264F3);
+    color: black;
+    font-family: 'Source', sans-serif;
+    min-height: 100vh;
+}
+
+.wrap {
+    margin: 10vh auto;
+    max-width: 80vh;
+    background: white;
+    width: 100%;
+    border-radius: 5%;
+}
+
+header {
+    font-size: 2.5vh;
+}
+
+header,form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5vh;
+    font-size: 3vh;
+    border: none;
+    background: #CDCDCC;
+}
+
+form button {
+    color: #5468eb;
+    background: #CDCDCC;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form button:hover {
+    background: #5468eb;
+    color: #CDCDCC;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 50vh;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5vh;
+    background: #CDCDCC;
+    color: black;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.75s ease;
+    overflow: auto;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete-button, .check-button {
+    background: #5468eb;
+    color: white;
+    border: none;
+    padding: 1.75vh;
+    cursor: pointer;
+    font-size: 1.75vh;
+}
+
+.check-button {
+    background: #e6aa60;
+}
+
+.todo-item {
+    padding: 0vh 0.25vh;
+}
+
+.fa-trash-alt, .fa-check {
+    pointer-events: none;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+
+.fade {
+    transition: all 0.75s ease;
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;   
+}
+
+.select {
+    margin: 3vh;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #5468eb;
+    width: 14vh;
+    cursor: pointer;
+    padding: 1.5vh;
+    background-color: #CDCDCC;
+    font-size: 1.75vh;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #5468eb;
+    top: 0;
+    right: 0;
+    padding: 1.5vh;
+    pointer-events: none;
+    font-size: 1.75vh;
+}
+
+.checkall-button {
+    background: #01BE25;
+    color: white;
+    border: none;
+    padding: 1.75vh;
+    cursor: pointer;
+    font-size: 1.75vh;
+}
+
+.removeall-button {
+    background: #C00900;
+    color: white;
+    border: none;
+    padding: 1.75vh;
+    cursor: pointer;
+    font-size: 1.75vh;
+}
