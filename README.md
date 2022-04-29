@@ -1,3 +1,3 @@
 # ToDoList
 
-This ToDoList was made with the usage/assistance of a coding tutorial (https://www.youtube.com/watch?v=Ttf3CEsEwMQ) made by Dev Ed. Various features such as the animations, core functions, and backend were designed with the tutorial while other aspects such as parts of the CSS and a few other functions were designed by myself.
+This is a web-based ToDoList containing features such as animations, auto size scaling, clear/check all buttons, functioning frontend and backend. Event-listeners are used for control of the list items and animations together with a vanilla HTML, CSS, and JavaScript frontend. The backend of the ToDoList utilizes local storage to maintain the list items and preserve them between startups. 
